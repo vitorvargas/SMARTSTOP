@@ -1,0 +1,199 @@
+EESchema Schematic File Version 4
+LIBS:power
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MCU_Module:Arduino_UNO_R3 A?
+U 1 1 5B06AB12
+P 6500 3300
+F 0 "A?" H 6500 4478 50  0000 C CNN
+F 1 "Arduino_UNO_R3" H 6500 4387 50  0000 C CNN
+F 2 "Module:Arduino_UNO_R3" H 6650 2250 50  0001 L CNN
+F 3 "https://www.arduino.cc/en/Main/arduinoBoardUno" H 6300 4350 50  0001 C CNN
+	1    6500 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L rur:DFPLAYER_MINI U?
+U 1 1 5B06AD7E
+P 4350 3500
+F 0 "U?" H 4350 4187 60  0000 C CNN
+F 1 "DFPLAYER_MINI" H 4350 4081 60  0000 C CNN
+F 2 "" H 4350 3500 60  0000 C CNN
+F 3 "" H 4350 3500 60  0000 C CNN
+	1    4350 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6700 2300 6700 1700
+Wire Wire Line
+	6700 1700 3500 1700
+Wire Wire Line
+	3500 1700 3500 3150
+Wire Wire Line
+	3500 3150 3750 3150
+Wire Wire Line
+	6400 4400 3550 4400
+Wire Wire Line
+	3550 4400 3550 3750
+Wire Wire Line
+	3550 3750 3750 3750
+Wire Wire Line
+	6000 2700 2900 2700
+Wire Wire Line
+	2900 2700 2900 3350
+Wire Wire Line
+	2900 3350 3750 3350
+Wire Wire Line
+	6000 2800 3250 2800
+Wire Wire Line
+	3250 2800 3250 3250
+Wire Wire Line
+	3250 3250 3750 3250
+$Comp
+L Device:Speaker LS?
+U 1 1 5B06B476
+P 2400 3500
+F 0 "LS?" H 2365 3083 50  0000 C CNN
+F 1 "Speaker" H 2365 3174 50  0000 C CNN
+F 2 "" H 2400 3300 50  0001 C CNN
+F 3 "~" H 2390 3450 50  0001 C CNN
+	1    2400 3500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3750 3650 2600 3650
+Wire Wire Line
+	2600 3650 2600 3500
+Wire Wire Line
+	3750 3850 2750 3850
+Wire Wire Line
+	2750 3850 2750 3400
+Wire Wire Line
+	2750 3400 2600 3400
+$Comp
+L RF:SIM900 U?
+U 1 1 5B06BF82
+P 8750 3550
+F 0 "U?" H 8750 5728 50  0000 C CNN
+F 1 "SIM900" H 8750 5637 50  0000 C CNN
+F 2 "" H 6700 4700 50  0001 C CNN
+F 3 "https://www.tme.eu/it/Document/3428bae894bc311e83c44aca8a5e5174/sim900.pdf" H 6700 4700 50  0001 C CNN
+	1    8750 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW?
+U 1 1 5B06CA4D
+P 2400 5200
+F 0 "SW?" H 2400 5485 50  0000 C CNN
+F 1 "SW_Push" H 2400 5394 50  0000 C CNN
+F 2 "" H 2400 5400 50  0001 C CNN
+F 3 "" H 2400 5400 50  0001 C CNN
+	1    2400 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW?
+U 1 1 5B06CAF8
+P 3500 5250
+F 0 "SW?" H 3500 5535 50  0000 C CNN
+F 1 "SW_Push" H 3500 5444 50  0000 C CNN
+F 2 "" H 3500 5450 50  0001 C CNN
+F 3 "" H 3500 5450 50  0001 C CNN
+	1    3500 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5B06CB91
+P 2200 5200
+F 0 "#PWR?" H 2200 4950 50  0001 C CNN
+F 1 "GND" H 2205 5027 50  0000 C CNN
+F 2 "" H 2200 5200 50  0001 C CNN
+F 3 "" H 2200 5200 50  0001 C CNN
+	1    2200 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5B06CBC5
+P 3300 5250
+F 0 "#PWR?" H 3300 5000 50  0001 C CNN
+F 1 "GND" H 3305 5077 50  0000 C CNN
+F 2 "" H 3300 5250 50  0001 C CNN
+F 3 "" H 3300 5250 50  0001 C CNN
+	1    3300 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 5250 4600 5250
+Wire Wire Line
+	6000 3900 4850 3900
+Wire Wire Line
+	4850 3900 4850 6000
+Wire Wire Line
+	4850 6000 2600 6000
+Wire Wire Line
+	2600 6000 2600 5200
+Wire Wire Line
+	7750 2250 5800 2250
+Wire Wire Line
+	5800 2250 5800 2900
+Wire Wire Line
+	5800 2900 6000 2900
+Wire Wire Line
+	7750 2150 5650 2150
+Wire Wire Line
+	5650 2150 5650 3000
+Wire Wire Line
+	5650 3000 6000 3000
+$Comp
+L Device:LED D?
+U 1 1 5B06F2A1
+P 7150 5350
+F 0 "D?" H 7142 5095 50  0000 C CNN
+F 1 "LED" H 7142 5186 50  0000 C CNN
+F 2 "" H 7150 5350 50  0001 C CNN
+F 3 "~" H 7150 5350 50  0001 C CNN
+	1    7150 5350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6000 3800 5500 3800
+Wire Wire Line
+	5500 3800 5500 5350
+Wire Wire Line
+	5500 5350 7000 5350
+$Comp
+L power:GND #PWR?
+U 1 1 5B06F8B9
+P 7300 5350
+F 0 "#PWR?" H 7300 5100 50  0001 C CNN
+F 1 "GND" H 7305 5177 50  0000 C CNN
+F 2 "" H 7300 5350 50  0001 C CNN
+F 3 "" H 7300 5350 50  0001 C CNN
+	1    7300 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 4000 4600 4000
+Wire Wire Line
+	4600 4000 4600 5250
+Connection ~ 4600 5250
+Wire Wire Line
+	4600 5250 3700 5250
+NoConn ~ 6000 5250
+$EndSCHEMATC
